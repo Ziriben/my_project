@@ -12,6 +12,6 @@ app.get('/coucou', function (req, res) { //a chaque fois qu'il recoit une requet
   res.send('Hello World!')
 })
 
-app.listen(3000, function () { //s'éxecute dès que le serveur est prêt à recevoir des requettes (écoute sur le port 3000)
+app.listen(process.env.PORT || 3000, function () { //s'éxecute dès que le serveur est prêt à recevoir des requettes (écoute sur le port 3000)
   console.log('Example app listening on port 3000!')
 })
