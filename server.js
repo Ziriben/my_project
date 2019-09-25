@@ -8,7 +8,7 @@ var server = http.createServer(function(req, res){
 const express = require('express')
 const app = express()
 
-app.get('/coucou', function (req, res) { //a chaque fois qu'il recoit une requette get à la racine du site, executer la function
+app.get('/', function (req, res) { //a chaque fois qu'il recoit une requette get à la racine du site, executer la function
   res.send('Hello World!')
 })
 
